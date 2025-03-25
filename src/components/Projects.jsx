@@ -13,17 +13,16 @@ const Projects = () => {
 
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.1,
   });
   return (
     <div id="projects">
-      <div className="flex justify-around">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:ms-20 gap-24">
         <motion.div
           className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-          ref={ref}
-          initial={{ opacity: 0, scale: 0 }}
-          animate={inView ? { opacity: 1, scale: 1 } : {}}
-          transition={{ delay: 0.3, duration: 0.5 }}
+        //   initial={{ opacity: 0, scale: 0 }}
+        //   animate={{ opacity: 1, scale: 1 }}
+        //   transition={{ delay: 0.5, duration: 0.8 }}
         >
           <img className="rounded-t-lg" src={RockGameImg} alt="" />
 
@@ -103,15 +102,12 @@ const Projects = () => {
             </button>
           </div>
         </motion.div>
-      </div>
-
-      <div className="flex justify-around mt-5">
         <motion.div
           className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-          ref={ref}
-          initial={{ opacity: 0, scale: 0 }}
-          animate={inView ? { opacity: 1, scale: 1 } : {}}
-          transition={{ delay: 0.5, duration: 0.5 }}
+        //   ref={ref}
+        //   initial={{ opacity: 0, scale: 0 }}
+        //   animate={inView ? { opacity: 1, scale: 1 } : {}}
+        //   transition={{ delay: 0.5, duration: 0.5 }}
         >
           <img className="rounded-t-lg" src={TicTacGameImg} alt="" />
 
@@ -152,10 +148,10 @@ const Projects = () => {
 
         <motion.div
           className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
-          ref={ref}
-          initial={{ opacity: 0, scale: 0 }}
-          animate={inView ? { opacity: 1, scale: 1 } : {}}
-          transition={{ delay: 0.5, duration: 0.5 }}
+        //   ref={ref}
+        //   initial={{ opacity: 0, scale: 0 }}
+        //   animate={inView ? { opacity: 1, scale: 1 } : {}}
+        //   transition={{ delay: 0.5, duration: 0.5 }}
         >
           <img className="rounded-t-lg" src={CurrencyConvImg} alt="" />
 
